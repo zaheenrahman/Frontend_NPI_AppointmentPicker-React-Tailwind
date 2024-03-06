@@ -2,6 +2,8 @@
 
 This is the frontend repository for the Appointments project. It provides a user interface to interact with the appointments management system.
 
+## Backend Functionality for this repo is found here with details: https://github.com/zaheenrahman/Clinicians-NPI_RestAPI_Python_Flask_React
+
 ## Description
 
 The Appointments Frontend is built using React.js, a popular JavaScript library for building user interfaces. It communicates with the backend API to fetch appointments data and display it to the user. Users can view appointments, filter them by date range, and perform other actions as necessary.
