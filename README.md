@@ -34,7 +34,7 @@ The Appointments Frontend is built using React.js, a popular JavaScript library 
 
 To start the development server:
 
-### npm start
+# npm start
 This command runs the app in development mode. Open http://localhost:3000 to view it in the browser.
 
 ### Contributing
