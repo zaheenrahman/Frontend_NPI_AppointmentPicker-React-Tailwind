@@ -23,26 +23,22 @@ function AppointmentsList() {
       <Search setAppointments={setAppointments} />
       <div className="overflow-x-auto">
         <table className="table-auto w-full bg-gray-100 rounded-lg shadow-lg">
-          <thead>
-            <tr className="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-              <th className="py-3 px-6 text-left">Appointment Time</th>
-              <th className="py-3 px-6 text-left">Clinician ID</th>
-              <th className="py-3 px-6 text-left">Patient ID</th>
-              <th className="py-3 px-6 text-left">Patient Name</th>
-              <th className="py-3 px-6 text-left">Status</th>
+        <thead>
+          <tr className="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+            <th className="py-3 px-6 text-left">Appointment Time</th>
+            <th className="py-3 px-6 text-left">Patient Name</th>
+            <th className="py-3 px-6 text-left">Status</th>
+          </tr>
+        </thead>
+        <tbody className="text-gray-600 text-sm font-light">
+          {appointments.map(appointment => (
+            <tr key={appointment.id} className="border-b border-gray-200 hover:bg-gray-200 transition-colors duration-300">
+              <td className="py-3 px-6 text-left whitespace-nowrap">{new Date(appointment.appointment_date).toLocaleString()}</td>
+              <td className="py-3 px-6 text-left">{appointment.patient_name}</td>
+              <td className="py-3 px-6 text-left">{appointment.status}</td>
             </tr>
-          </thead>
-          <tbody className="text-gray-600 text-sm font-light">
-            {appointments.map(appointment => (
-              <tr key={appointment.id} className="border-b border-gray-200 hover:bg-gray-200 transition-colors duration-300">
-                <td className="py-3 px-6 text-left whitespace-nowrap">{new Date(appointment.appointment_date).toLocaleString()}</td>
-                <td className="py-3 px-6 text-left">{appointment.clinician_id}</td>
-                <td className="py-3 px-6 text-left">{appointment.patient_id}</td>
-                <td className="py-3 px-6 text-left">{appointment.patient_name}</td>
-                <td className="py-3 px-6 text-left">{appointment.status}</td>
-              </tr>
-            ))}
-          </tbody>
+          ))}
+        </tbody>
         </table>
       </div>
     </div>
