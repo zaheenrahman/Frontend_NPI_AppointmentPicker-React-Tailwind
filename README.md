@@ -41,3 +41,13 @@ Acknowledgements
 React.js - A JavaScript library for building user interfaces.
 Axios - Promise-based HTTP client for the browser and Node.js.
 Tailwind CSS - A utility-first CSS framework for rapidly building custom designs.
+
+### Misc - Working images ###
+
+![Image 2](https://github.com/zaheenrahman/Frontend_NPI_AppointmentPicker-React-Tailwind/assets/35182751/4793fc2b-ef30-48e8-80c0-dd4e8952d44f)
+![Image 3](https://github.com/zaheenrahman/Frontend_NPI_AppointmentPicker-React-Tailwind/assets/35182751/6e34b5f5-3247-4444-89ff-34e881648903)
+![Image 45](https://github.com/zaheenrahman/Frontend_NPI_AppointmentPicker-React-Tailwind/assets/35182751/97d30cb2-4941-4e86-9d9b-3c938e891456)
+
+
+
+
